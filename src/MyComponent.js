@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Container } from 'react-pixi-fiber';
+import MyContext from './MyContext';
 
 const MyComponent = () => {
-  useEffect(() => {
-    let x = 2;
-    debugger
-  }, []);
+  const { x } = useContext(MyContext);
+  // Inside of <Stage>, x is not defined
+  debugger;
 
   return (
     <Container />

@@ -7,9 +7,10 @@
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.1",
     "pixi.js": "^5.1.2",
-    "react-pixi-fiber": "https://github.com/nstolpe/react-pixi-fiber#feature/hooks"
+    "react-pixi-fiber": "https://github.com/nstolpe/react-pixi-fiber/#feature/hooks"
   },
   "scripts": {
+    "setup": "cd node_modules/react-pixi-fiber && yarn && yarn build && rm -r node_modules && cd ../..",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
